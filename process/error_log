@@ -1,0 +1,8 @@
+[16-Sep-2024 16:00:46 America/Bogota] PHP Warning:  Undefined array key "dis" in /home2/planesal/public_html/process/claro.php on line 9
+[16-Sep-2024 16:00:46 America/Bogota] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /home2/planesal/public_html/panel/include/link.php:11
+Stack trace:
+#0 /home2/planesal/public_html/panel/include/link.php(11): mysqli_connect('localhost', 'root', Object(SensitiveParameterValue), 'metr0n1c4')
+#1 /home2/planesal/public_html/panel/include/setings.php(962): conectar()
+#2 /home2/planesal/public_html/process/claro.php(11): create_user('4807097', '3114461000', NULL)
+#3 {main}
+  thrown in /home2/planesal/public_html/panel/include/link.php on line 11
